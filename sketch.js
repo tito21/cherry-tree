@@ -80,7 +80,7 @@ function drawBranch(start, ornamentFunction) {
     let pos = p5.Vector.sub(createVector(branch_x, branch_y), start);
     pos = p5.Vector.mult(pos, (i + 1) / NUM_FLOWERS);
     pos.add(start);
-    pos.add(p5.Vector.random2D().mult(random(-12, 12)));
+    pos.add(p5.Vector.fromAngle(random(0, 2 * PI)).mult(random(-12, 12)));
     ornamentFunction(pos);
   }
 }
@@ -92,7 +92,6 @@ function drawFlower(start) {
   noStroke();
   ellipse(start.x, start.y, 10, 10);
   pop();
-
 }
 
 
@@ -104,8 +103,8 @@ function drawLeaf(start, color) {
   noStroke();
   ellipse(0, 0, 10, 5);
   pop();
-
 }
+
 
 function consentGiven() {
   createUserSeed();
