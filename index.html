@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherry Tree</title>
+  <style>
+    body {
+      background-color: #1b1b1b;
+    }
+
+    main {
+      max-width: 1000px;
+      text-align: center;
+      margin: 4em auto;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #canvas {
+      margin-top: 2em;
+    }
+
+    #consent {
+      background-color: #fff;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 style="color: #fff;">Cherry Tree</h1>
+    <div id="consent">
+      This project uses local storage to uniquely identify your browser and generate a unique seed for the tree. This
+      allows you to see the same tree every time you visit the page. By clicking "I Consent", you agree to the use of
+      local storage for this purpose. One you click consent a new random tree will be generated.
+      <br><br>
+      <button id="consent-button">I Consent</button>
+    </div>
+    <div id="canvas">
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
