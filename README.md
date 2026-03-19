@@ -10,8 +10,3 @@ small amount of information in your browser that is later read in future visits 
 when discussing cookies and internet tracking. And that is exactly what I wanted to illustrate with this sketch. You are
 never truly anonymous on the internet, websites use a variety of techniques to track the websites you visit and
 virtually follow you to serve you relevant ads.
-
-
-# TODO
-
-- Get consent from the user for local storage
